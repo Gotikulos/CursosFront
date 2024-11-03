@@ -1,10 +1,16 @@
-@import url('./header.css');
+@import url("./header.css");
 
 :root {
     --cor--fundo: #EBECEE;
-    --branco: $FFFFFF;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --gradiente: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --fonte: "Poppins", sans-serif;
 }
 
 body {
     background-color: var(--cor--fundo);
+    font-family: var(--fonte);
+    font-size: 16px;
+    font-weight: 400;
 }

@@ -1,7 +1,7 @@
 .cabecalho_menu {
     width: 24px;
     height: 24px;
-    background-color: url('../Imagens/Menu.png');
+    background-image: url("../Imagens/Menu.png");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
@@ -24,10 +24,33 @@
     padding: 1em;
 }
 
+.container_botao {
+    display: none;
+}
+
 .lista_menu {
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
+}
+
+.lista_menu_titulo, .lista_menu_item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista_menu_titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista_menu_link {
+    background: var(--gradiente);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 .container_botao:checked~.lista_menu {
