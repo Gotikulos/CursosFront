@@ -1,6 +1,9 @@
 @import url("./header.css");
 @import url("./banner.css");
 @import url("./carrossel.css");
+@import url("./topicos.css");
+@import url("./contato.css");
+@import url("./footer.css");
 
 :root {
     --cor--fundo: #EBECEE;
@@ -9,6 +12,10 @@
     --gradiente: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
     --fonte: "Poppins", sans-serif;
     --azul: #002F52;
+    --fonte_sec: "Josefin Sans", sans-serif;
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza_claro: #858585;
 }
 
 body {

@@ -7,12 +7,19 @@
     display: inline-block;
 }
 
+.container_botao:checked~.container_rotulo>.cabecalho_menu {
+    background-image: url("../Imagens/MenuAberto.png");
+} 
 .cabecalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+
+.container_botao:checked~.container_rotulo {
+    background: var(--gradiente);
 }
 
 .container {
@@ -62,4 +69,104 @@
     text-transform: uppercase;
 }
 
+.container_titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+.container_texto {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+    .container_titulo, .container_titulo_negrito {
+        font-family: var(--fonte_sec);
+        font-size: 30px;
+    }
+
+    .container_titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container_titulo_negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes_itens {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes_link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container_imagem_trans {
+        display: none;
+    }
+
+    .cabecalho_menu {
+        display: none;
+    }
+
+    .opcoes_botao:checked ~ .lista_menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes_botao {
+        display: none;
+    }
+
+    .opcoes_botao:checked~.opcoes_rotulo>.opcoes_itens {
+        background: var(--gradiente);
+        color: var(--branco);
+    }
+
+    .opcoes_itens {
+     padding: 2em 1em;
+    }
+
+    .lista_menu_item:hover {
+        background: var(--gradiente);
+    }
+
+    .lista_menu_item:hover > .lista_menu_link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container_link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho {
+        padding: 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container_texto {
+        display: block;
+    }
+}
 
